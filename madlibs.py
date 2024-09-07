@@ -41,3 +41,10 @@ if not words:
 for word in words:
     while True:
         answer = input(f"Enter a word for {word}: ").strip()
+
+        # Error handling for empty inputs
+        if not answer:
+            print(f"Error: No input provided for {word}. Please enter a valid word.")
+        else:
+            answers[word] = answer  # Store valid replacement
+            break  # Exit the loop when a valid input is provided
