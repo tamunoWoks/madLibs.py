@@ -31,3 +31,8 @@ for i, char in enumerate(story):
 
 # Dictionary to store user inputs for each placeholder word
 answers = {}
+
+# Check if any placeholders were found
+if not words:
+    print("Error: No placeholders found in the story.")
+    exit()  # Exit if no placeholders are found
