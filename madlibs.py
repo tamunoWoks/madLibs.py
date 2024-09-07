@@ -14,3 +14,7 @@ words = set()
 
 # Variable to track the start index of a placeholder word
 start_of_word = -1
+
+# Define the characters marking the start and end of placeholder words
+target_start = "<"
+target_end = ">"
