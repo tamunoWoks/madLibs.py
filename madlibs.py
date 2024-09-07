@@ -8,3 +8,6 @@ except FileNotFoundError:
 except IOError:
     print("Error: An issue occurred while reading 'story.txt'.")
     exit()  # Exit the program if an IO error occurs
+
+# Initialize an empty set to store unique placeholder words
+words = set()
