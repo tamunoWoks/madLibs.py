@@ -48,3 +48,7 @@ for word in words:
         else:
             answers[word] = answer  # Store valid replacement
             break  # Exit the loop when a valid input is provided
+
+# Replace each placeholder in the story with the corresponding user-provided word
+for word in words:
+    story = story.replace(word, answers[word])
