@@ -28,3 +28,6 @@ for i, char in enumerate(story):
         word = story[start_of_word : i + 1]
         words.add(word)  # Add the placeholder to the set
         start_of_word = -1  # Reset the start index after finding a placeholder
+
+# Dictionary to store user inputs for each placeholder word
+answers = {}
