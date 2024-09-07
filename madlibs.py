@@ -36,3 +36,8 @@ answers = {}
 if not words:
     print("Error: No placeholders found in the story.")
     exit()  # Exit if no placeholders are found
+
+# For each unique placeholder word, prompt the user for a replacement
+for word in words:
+    while True:
+        answer = input(f"Enter a word for {word}: ").strip()
