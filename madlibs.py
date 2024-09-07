@@ -11,3 +11,6 @@ except IOError:
 
 # Initialize an empty set to store unique placeholder words
 words = set()
+
+# Variable to track the start index of a placeholder word
+start_of_word = -1
