@@ -18,3 +18,13 @@ start_of_word = -1
 # Define the characters marking the start and end of placeholder words
 target_start = "<"
 target_end = ">"
+
+# Loop through each character in the story to find placeholders
+for i, char in enumerate(story):
+    if char == target_start:
+        start_of_word = i  # Mark the start of a placeholder word
+    if char == target_end and start_of_word != -1:
+        # Extract the placeholder word (including the '<' and '>')
+        word = story[start_of_word : i + 1]
+        words.add(word)  # Add the placeholder to the set
+        start_of_word = -1  # Reset the start index after finding a placeholder
