@@ -52,3 +52,7 @@ for word in words:
 # Replace each placeholder in the story with the corresponding user-provided word
 for word in words:
     story = story.replace(word, answers[word])
+
+# Output the final modified story with placeholders replaced
+print("\nModified story:\n")
+print(story)
